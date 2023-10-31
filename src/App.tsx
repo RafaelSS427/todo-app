@@ -1,5 +1,5 @@
 
-import { ImagesContainer, Navbar, TodosList, Input } from '@/components'
+import { ImagesContainer, Navbar, TodosList, Input, Credits } from '@/components'
 import { Providers } from './Providers'
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
             <footer className="my-5">
               <h6 className="font-semibold text-center text-gray-500/80">Drag and drop to reorder list</h6>
             </footer>
+            <Credits />
           </div>
         </main>
       </div>

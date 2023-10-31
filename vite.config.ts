@@ -3,7 +3,9 @@ import react from '@vitejs/plugin-react'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [tsconfigPaths(), react()],
-  base: "/todo-app"
+export default defineConfig(({ mode }) => {
+  return {
+    plugins: [tsconfigPaths(), react()],
+    base: mode === "development" ? "" : "/todo-app/"
+  }
 })
