@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Josefin Sans;
+        font-weight: 400;
+        src: url(/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
+    }
+    
+    @font-face {
+        font-family: Josefin Sans;
+        font-weight: 700;
+        src: url(/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf);
+    }
+}
+
+.task:hover > .btn-remove {
+    opacity: 1;
+}
